@@ -56,7 +56,7 @@
 - Two-Dimensional Arrays are sued for Matrices.
 - Array can be created in Stack or Heap Section of memory.
 
-# Pointer
+# Pointer:
 
 - Pointer is address variable.
 - It can store the address of data.
@@ -69,3 +69,12 @@
   - q-p => gives number of elements between 2 pointers p and q.
 - Pointers can be of many levels.
 - Double pointer is used for accessing 2D arrays.
+
+# Reference:
+
+- Reference is a Alias of variable.
+- It must be initialised when declared.
+- It doesn’t take any memory.
+- It cannot be modified to refer other variable.
+- Syntax for reference declaration is.
+- Int &y = x;
