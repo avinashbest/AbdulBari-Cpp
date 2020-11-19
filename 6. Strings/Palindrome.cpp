@@ -9,7 +9,7 @@ int main()
     string rev = "";
     int len = (int)str.length();
     rev.resize(len);
-    for (int i = 0; j = len - 1; i < len; i++; j--)
+    for (int i = 0, j = len - 1; i < len; i++, j--)
     {
         rev[i] = str[j];
     }
