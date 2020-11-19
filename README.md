@@ -78,3 +78,61 @@
 - It cannot be modified to refer other variable.
 - Syntax for reference declaration is.
 - Int &y = x;
+
+# Functions:
+
+- Function is a module which performs a specific task
+- Functions are called by name
+- Rules for giving function name is same as variable name
+- Function can take 0 or more parameters
+- Function can return single value
+- Void function don’t return any value
+- Default return type is int
+
+# Function Overloading:
+
+- If More than one functions can have same name, but different parameter list, then they are overloaded functions
+- Return the is not considered in overloading
+- Function overloading is used for achieving compile time polymorphism
+
+# Function Template:
+
+- Function template are used for defining generic functions
+- They work for multiple datatypes
+- Datatype is decided based on the type of value passed
+- Datatype is a template variable
+- Function can have multiple template variables
+
+# Call by Address:
+
+- Address pf actual parameters are passed.
+- Formal parameters must be pointers
+- Formal parameters ca indirectly access actual parameters.
+- Changes done using formal parameters will reflect in actual parameters
+
+# Return by Address:
+
+- A function can return address of memory
+- It should not return address of local variables, which will be disposed after function ends
+- It can return address of memory allocated in heap
+
+# Return by Reference
+
+- A function cal return reference
+- It should not return reference of its local variables
+- It can return formal parameters if they are reference
+
+# Default Arguments
+
+- Parameters of a function can have default values
+- If a parameter is default then , passing its value is options
+- Function with default argument can be called with variable number of argument
+- Default values to parameters must be given from right side parameter
+- Default arguments are much useful in constructors
+- Default arguments are useful for defining overloaded functions
+
+# Static variables
+
+- They have local scope but remain in memory thru out the execution of program
+- They are created in code section
+- They are history-sensitive
