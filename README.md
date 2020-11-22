@@ -198,3 +198,10 @@
 - Facilitator - actual functions of class
 - Enquiry - used for checking if an object satisfies some condition
 - Destructor - used for releasing resources used by object
+
+# Operator Overloading:
+
+- Operator overloading is a compile-time polymorphism in which the operator is overloaded to provide the special meaning to the user-defined data type. Operator overloading is used to overload or redefines most of the operators available in C++. It is used to perform the operation on the user-defined data type. For example, C++ provides the ability to add the variables of the user-defined data type that is applied to the built-in data types.
+- The advantage of Operators overloading is to perform different operations on the same operand.
+
+![image](https://drive.google.com/uc?export=view&id=1VDUwHMnGRW8v0FbNwOv674J-zsLmkGTm)
