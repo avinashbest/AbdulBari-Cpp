@@ -205,3 +205,21 @@
 - The advantage of Operators overloading is to perform different operations on the same operand.
 
 ![image](https://drive.google.com/uc?export=view&id=1VDUwHMnGRW8v0FbNwOv674J-zsLmkGTm)
+
+# Inheritance:
+
+- Acquiring the feature of existing class into a new class.
+- Deriving a class from a existing class.
+
+# Access Specifiers:
+
+- Private -> Accessible only inside a class
+- Protected -> Accessible inside a class and inside derived classes
+- Public -> accessible inside class, inside derived class and upon object
+
+# Ways of inheritance:
+
+- A class can be inherited in flowing ways
+- Publicly -> All members of base will have same accessibility in derived class
+- Protectedly -> All members of base will become protected in derived class
+- Privately -> All members of base will become private in derived class
