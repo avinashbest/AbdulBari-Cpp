@@ -423,5 +423,22 @@
 - Only one instance of static members is created and shared by all objects
 - They can be accessed directly using class name
 - Static members functions are functions of a class, they can be called using class name, without creating object of a class.
-- They can access only static data members of a class, they cannot access non-static members
-  of a class.
+- They can access only static data members of a class, they cannot access non-static members of a class.
+
+  > Example:
+
+      ```
+      class Student{
+        public:
+          int rollNo;
+          static int admissionNo;
+
+          Student()
+          {
+            admissionNo;
+            rollNo = admissionNo;
+          }
+      };
+
+      int Student::admissionNo = 0;
+      ```
