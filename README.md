@@ -298,3 +298,121 @@
   };
 
   ```
+
+# Virtual Functions
+
+- Virtual functions are used for achieving polymorphism
+- Base class can have virtual functions
+- Virtual functions can be overrides in derived class
+- Pure virtual functions must be overrides by derived class
+
+  > Example:
+
+  ```
+  class BasicCar
+  {
+  public:
+    virtual void start(){cout<<"BasicCar started"<<endl;}
+  };
+
+  class AdvanceCar: public BasicCar
+  {
+  public:
+    void start(){cout<<"AdvanceCar Started"<<endl;}
+  };
+
+  int main()
+  {
+    BasicCar *p=new AdvanceCar();
+    p->start();
+  }
+  ```
+
+# Polymorphism
+
+- Same name different actions
+- Runtime Polymorphism is achieved using function overriding
+- Virtual functions are abstract functions of base class
+- Derived class must override virtual function
+- Base class pointer pointing to derived class object and a override function is called
+
+  > Summary: class car is defined, then sub classes override, then base class method made as virtual the pure virtual
+
+  > Example:
+
+  ```
+
+    class Car
+    {
+    public:
+      virtual void start()=0;
+    };
+
+    class Innova:public Car
+    {
+    public:
+      void start(){cout<<"Innova Started"<<endl;}
+    };
+
+    class Swift:public Car
+    {
+    public:
+      void start(){cout<<"Swift Started"<<endl;}
+    };
+
+    int main()
+    {
+      //Car c;
+      Car *p=new Innova();
+      p->start();
+      p=new Swift();
+      p->start();
+    }
+  ```
+
+  > When we assign virtual function to 0. It is pure virtual function. Those function are must be overidded by the derived class.
+
+# Abstract class:
+
+- Class having pure virtual function is a abstract class
+- Abstract class can have concrete also.
+- Object of abstract class cannot be created
+- Derived class can must override pure virtual function, otherwise it will also become a abstract class.
+- Pointer of abstract class can be created
+- Pointer of abstract class can hold object of derived class
+- Abstract classes are used for achieving polymorphism
+- Base class can be:
+  - Concrete
+  - Abstract with some concrete and some pure virtual functions
+  - All virtual functions
+
+> Example:
+
+    ```
+    class Base //Abstract Class
+    {
+    public:
+      virtual void fun1()=0;
+      virtual void fun2()=0;
+    };
+
+    class Derived :public Base
+    {
+    public:
+      void fun1()
+      {
+        cout<<"fun1 of Derived"<<endl;
+      }
+      void fun2()
+      {
+        cout<<"fun2 of Derived"<<endl;
+      }
+    };
+
+    int main()
+    {
+      Derived d;
+      d.fun1();
+      d.fun2();
+    }
+    ```
